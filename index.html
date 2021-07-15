@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
-			<style>
+		<link rel="stylesheet" href="style.css">
+
+		<title>Color.com</title>
+			<!--<style>
 				.swatch {
 					width: 100px;
 					height: 100px;
@@ -18,16 +20,16 @@
 					width: 600px;
 					margin: auto;
 				}
-			</style>
+			</style>-->
 	</head>
-	<body>
+	<body class="dark">
 
 		<!-- Base Styles - Set the base styles for the page -->
 
 		<main>
-
+			
 			<!-- navbar - Style the navbar -->
-			<section id="nav">
+			<div class="navbar">
 				<header>
 					<nav>
 						<a href="#">Color.com</a>
@@ -38,10 +40,10 @@
 						<a href="#contact">Contact</a>
 					</nav>
 				</header>
-			</section>
-
+			</div>
+			<div class="container-main">
 			<!-- banner -->
-			<section>
+			<section id="banner">
 				<ticker-tape><h1>...Color.com is awesome...</h1></ticker-tape>
 			</section>
 
@@ -151,18 +153,24 @@
 			</section>
 
 
-			<!-- Footer -->
-			<section id="footer">
-				<footer>
-					<ul>
-
-					</ul>
-				</footer>
-			</section>
-
+			
+		</div>
 		</main>
+		<!-- Footer -->
+		<div class="page-footer">
+			<footer>
+				<ul>
+					<button onclick="darkToggle()">Toggle dark mode</button>
+				</ul>
+			</footer>
+		</div>
 
 		<script>
+
+			function darkToggle() {
+				var element = document.body;
+				element.classList.toggle("dark");
+			}
 			
 
 			// All 100 color swatches has a CSS custom property assigne to it. 
