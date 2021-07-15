@@ -190,6 +190,7 @@ body {
         }
     
         input, textarea {
+            grid-template-columns: max-content;
             width: 100%;
             height: 100%;
             pointer-events: none;
@@ -208,24 +209,28 @@ body {
         color: $color-primary;
     }
 
-    input[type="checkbox"] {
-        @include flexCenter();
-        appearance: none;
-        height: 1.75rem;
-        width: 1.75rem;
-        padding: 1rem;
-        border-radius: $border-circle;
-        margin: 0 auto;
-        background-color: $color-light;
-        cursor: pointer;
+    input {
+        &[type="checkbox"], &[type="radio"]{
+            @include flexCenter();
+            height: 1.75rem;
+            max-width: 1.75rem;
+            padding: 1rem;
+            border-radius: $border-circle;
+            background-color: $color-light;
+            cursor: pointer;
+        }
+
+        &[type="checkbox"] {
+            appearance: none;
+        }
     
-        &::after {
+        &[type="checkbox"]::after {
             content: $checkmark;
             font-size: 1.5rem;
             display: none;
         }
     
-        &:checked {
+        &[type="checkbox"]:checked {
             background-color: $color-success;
     
             &:after {
@@ -233,6 +238,16 @@ body {
             }
         }
     }
+
+    label {
+        &:nth-child(n+4) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            
+        }
+    }
+
 
     .navbar {
         position: fixed; 
