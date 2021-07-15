@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
-  --color-background: #dadfd9;
-  --color-foreground: #091d2c;
+  --color-background: #d6daf0;
+  --color-foreground: #eef2ff;
+  --color-foreground-dark: #091d2c;
   --color-dark: #080b17;
   --color-md-light: #9cbfd8;
   --color-md-dark: #080218;
@@ -11,8 +12,10 @@
   --color-light: #ddf0fe;
   --color-abbr: #00070e;
   --color-abbr-dark: #c7b57b;
-  --color-link: #b3fbe5;
-  --color-nav: #25272b;
+  --color-link: #3C4453;
+  --color-link-dark: #b3fbe5;
+  --color-nav: rgba(217, 228, 230, 0.9);
+  --color-nav-dark: #25272b;
   --color-lightest: #f5f5fd;
   --color-button-hover: #11b0a6;
   --color-info: #b0d6ec;
@@ -32,27 +35,50 @@
 }
 
 body {
-  background-color: #dadfd9;
+  background-color: #d6daf0;
   color: #080b17;
   line-height: 1.75rem;
 }
 body.dark {
   background-color: #080b17;
-  color: #dadfd9;
+}
+body.dark a {
+  color: #b3fbe5;
+}
+body.dark button {
+  color: #9cbfd8;
+}
+body.dark .navbar, body.dark .page-footer {
+  background-color: #25272b;
+}
+body.dark .navbar a, body.dark .page-footer a {
+  color: #b0d6ec;
+}
+body.dark .navbar a:nth-child(n+2):hover::after, body.dark .page-footer a:nth-child(n+2):hover::after {
+  border-bottom: 2px solid #ddf0fe;
+}
+body.dark pre, body.dark form, body.dark section {
+  background-color: #091d2c;
+  color: #ddf0fe;
+}
+body.dark section {
+  color: #ddf0fe;
+}
+body.dark section#popular .card {
+  background-color: #080218;
 }
 body a {
-  color: #b3fbe5;
-  text-decoration: none;
+  color: #1D507C;
 }
 body abbr {
-  color: #c7b57b;
+  color: #8a0f11;
   text-decoration: none;
 }
 body button {
   padding: 1em 1.5em;
   background: none;
-  border: 4px solid #ded9df;
-  color: #eff5f6;
+  border: 4px solid #29250f;
+  color: #080218;
   border-radius: 4px;
   font-weight: bolder;
   font-size: 1rem;
@@ -62,7 +88,7 @@ body button {
   z-index: 1;
 }
 body button:hover {
-  box-shadow: inset 300px 0 0 0 #11b0a6;
+  box-shadow: inset 100em 0 0 0 #11b0a6;
   cursor: pointer;
   color: black;
 }
@@ -106,7 +132,7 @@ body form input, body form textarea {
   border: none;
   outline: none;
   padding-left: 1rem;
-  background-color: #ded9df;
+  background-color: #f0ecd6;
   color: black;
   font-weight: bolder;
   font-size: 1.25em;
@@ -145,7 +171,7 @@ body .navbar {
   z-index: 9999;
 }
 body .navbar, body .page-footer {
-  background-color: #25272b;
+  background-color: rgba(217, 228, 230, 0.9);
   color: #f5f5fd;
   box-shadow: 0px 0px 10px #9cbfd8;
   min-height: 5%;
@@ -162,7 +188,8 @@ body .navbar h1, body .page-footer h1 {
 }
 body .navbar a, body .page-footer a {
   height: 100%;
-  color: #ddf0fe;
+  color: #3C4453;
+  text-decoration: none;
   padding: 0 1rem;
   position: relative;
 }
@@ -174,7 +201,7 @@ body .navbar a:nth-child(n+2):hover::after, body .page-footer a:nth-child(n+2):h
   left: 0;
   top: 2.5rem;
   /* <- distance */
-  border-bottom: 2px solid #f6ecd6;
+  border-bottom: 2px solid #080b17;
 }
 body .navbar ul, body .page-footer ul {
   display: flex;
@@ -194,8 +221,8 @@ body .page-footer > :nth-child(3) {
   color: #080218;
 }
 body pre, body form {
-  background-color: #091d2c;
-  color: #dadfd9;
+  background-color: #eef2ff;
+  color: #080b17;
   padding: 0.5rem 1rem;
   margin: 1rem;
   border-radius: 4px;
@@ -206,12 +233,13 @@ body pre code {
   white-space: pre-wrap;
 }
 body section {
-  background-color: #091d2c;
+  background-color: #eef2ff;
+  color: #080b17;
   padding: 2rem;
   margin: 1rem;
 }
 body section:nth-child(n+2) h1 {
-  border-bottom: 4px solid #dadfd9;
+  border-bottom: 4px solid #d6daf0;
   margin-bottom: 0.5em;
 }
 body section#popular {
@@ -222,7 +250,7 @@ body section#popular .card {
   margin: 0 3%;
   flex: 1 1 auto;
   padding: 1.5rem;
-  background-color: #080218;
+  background-color: #9cbfd8;
   border-radius: 5%;
   text-align: center;
 }
