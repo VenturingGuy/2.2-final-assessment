@@ -2,6 +2,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
+  --color-sample-0: hsl(3, 100%, 50%);
+  --color-sample-1: hsl(6, 100%, 50%);
+  --color-sample-2: hsl(9, 100%, 50%);
+  --color-sample-3: hsl(12, 100%, 50%);
+  --color-sample-4: hsl(15, 100%, 50%);
+  --color-sample-5: hsl(18, 100%, 50%);
+  --color-sample-6: hsl(21, 100%, 50%);
+  --color-sample-7: hsl(24, 100%, 50%);
+  --color-sample-8: hsl(27, 100%, 50%);
+  --color-sample-9: hsl(30, 100%, 50%);
+  --color-sample-10: hsl(33, 100%, 50%);
+  --color-sample-11: hsl(36, 100%, 50%);
+  --color-sample-12: hsl(39, 100%, 50%);
+  --color-sample-13: hsl(42, 100%, 50%);
+  --color-sample-14: hsl(45, 100%, 50%);
+  --color-sample-15: hsl(48, 100%, 50%);
+  --color-sample-16: hsl(51, 100%, 50%);
+  --color-sample-17: hsl(54, 100%, 50%);
+  --color-sample-18: hsl(57, 100%, 50%);
+  --color-sample-19: hsl(60, 100%, 50%);
+  --color-sample-20: hsl(63, 100%, 50%);
+  --color-sample-21: hsl(66, 100%, 50%);
+  --color-sample-22: hsl(69, 100%, 50%);
+  --color-sample-23: hsl(72, 100%, 50%);
+  --color-sample-24: hsl(75, 100%, 50%);
+  --color-sample-25: hsl(78, 100%, 50%);
+  --color-sample-26: hsl(81, 100%, 50%);
+  --color-sample-27: hsl(84, 100%, 50%);
+  --color-sample-28: hsl(87, 100%, 50%);
+  --color-sample-29: hsl(90, 100%, 50%);
+  --color-sample-30: hsl(93, 100%, 50%);
+  --color-sample-31: hsl(96, 100%, 50%);
+  --color-sample-32: hsl(99, 100%, 50%);
+  --color-sample-33: hsl(102, 100%, 50%);
+  --color-sample-34: hsl(105, 100%, 50%);
+  --color-sample-35: hsl(108, 100%, 50%);
+  --color-sample-36: hsl(111, 100%, 50%);
+  --color-sample-37: hsl(114, 100%, 50%);
+  --color-sample-38: hsl(117, 100%, 50%);
+  --color-sample-39: hsl(120, 100%, 50%);
+  --color-sample-40: hsl(123, 100%, 50%);
+  --color-sample-41: hsl(126, 100%, 50%);
+  --color-sample-42: hsl(129, 100%, 50%);
+  --color-sample-43: hsl(132, 100%, 50%);
+  --color-sample-44: hsl(135, 100%, 50%);
+  --color-sample-45: hsl(138, 100%, 50%);
+  --color-sample-46: hsl(141, 100%, 50%);
+  --color-sample-47: hsl(144, 100%, 50%);
+  --color-sample-48: hsl(147, 100%, 50%);
+  --color-sample-49: hsl(150, 100%, 50%);
+  --color-sample-50: hsl(153, 100%, 50%);
+  --color-sample-51: hsl(156, 100%, 50%);
+  --color-sample-52: hsl(159, 100%, 50%);
+  --color-sample-53: hsl(162, 100%, 50%);
+  --color-sample-54: hsl(165, 100%, 50%);
+  --color-sample-55: hsl(168, 100%, 50%);
+  --color-sample-56: hsl(171, 100%, 50%);
+  --color-sample-57: hsl(174, 100%, 50%);
+  --color-sample-58: hsl(177, 100%, 50%);
+  --color-sample-59: hsl(180, 100%, 50%);
+  --color-sample-60: hsl(183, 100%, 50%);
+  --color-sample-61: hsl(186, 100%, 50%);
+  --color-sample-62: hsl(189, 100%, 50%);
+  --color-sample-63: hsl(192, 100%, 50%);
+  --color-sample-64: hsl(195, 100%, 50%);
+  --color-sample-65: hsl(198, 100%, 50%);
+  --color-sample-66: hsl(201, 100%, 50%);
+  --color-sample-67: hsl(204, 100%, 50%);
+  --color-sample-68: hsl(207, 100%, 50%);
+  --color-sample-69: hsl(210, 100%, 50%);
+  --color-sample-70: hsl(213, 100%, 50%);
+  --color-sample-71: hsl(216, 100%, 50%);
+  --color-sample-72: hsl(219, 100%, 50%);
+  --color-sample-73: hsl(222, 100%, 50%);
+  --color-sample-74: hsl(225, 100%, 50%);
+  --color-sample-75: hsl(228, 100%, 50%);
+  --color-sample-76: hsl(231, 100%, 50%);
+  --color-sample-77: hsl(234, 100%, 50%);
+  --color-sample-78: hsl(237, 100%, 50%);
+  --color-sample-79: hsl(240, 100%, 50%);
+  --color-sample-80: hsl(243, 100%, 50%);
+  --color-sample-81: hsl(246, 100%, 50%);
+  --color-sample-82: hsl(249, 100%, 50%);
+  --color-sample-83: hsl(252, 100%, 50%);
+  --color-sample-84: hsl(255, 100%, 50%);
+  --color-sample-85: hsl(258, 100%, 50%);
+  --color-sample-86: hsl(261, 100%, 50%);
+  --color-sample-87: hsl(264, 100%, 50%);
+  --color-sample-88: hsl(267, 100%, 50%);
+  --color-sample-89: hsl(270, 100%, 50%);
+  --color-sample-90: hsl(273, 100%, 50%);
+  --color-sample-91: hsl(276, 100%, 50%);
+  --color-sample-92: hsl(279, 100%, 50%);
+  --color-sample-93: hsl(282, 100%, 50%);
+  --color-sample-94: hsl(285, 100%, 50%);
+  --color-sample-95: hsl(288, 100%, 50%);
+  --color-sample-96: hsl(291, 100%, 50%);
+  --color-sample-97: hsl(294, 100%, 50%);
+  --color-sample-98: hsl(297, 100%, 50%);
+  --color-sample-99: hsl(300, 100%, 50%);
   --color-background: #d6daf0;
   --color-foreground: #eef2ff;
   --color-foreground-dark: #091d2c;
@@ -94,7 +194,7 @@ body button:hover {
 }
 body div[class=container-main] {
   display: grid;
-  grid-template-areas: "banner banner banner" "about about swatches" "popular popular popular" "cart contact contact" "cart contact contact";
+  grid-template-areas: "banner banner banner" "about about about" "swatches swatches cart" "popular popular popular" "contact contact contact" "contact contact contact";
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: 10vh auto 10vh;
@@ -124,6 +224,9 @@ body form {
 }
 body form > *, body form textarea {
   padding: 1rem;
+}
+body form textarea {
+  resize: none;
 }
 body form input, body form textarea {
   grid-template-columns: max-content;
@@ -263,6 +366,15 @@ body section#popular .card {
 }
 body section#popular .card img {
   max-width: 100%;
+}
+body .swatches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  margin-top: 1em;
+}
+body .swatches .swatch {
+  height: 1em;
 }
 body .switch-2, body .control-checkbox {
   display: flex;
