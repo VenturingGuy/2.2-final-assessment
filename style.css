@@ -169,6 +169,7 @@ body.dark section#popular .card {
 }
 body a {
   color: #1D507C;
+  cursor: pointer;
 }
 body abbr {
   color: #8a0f11;
@@ -194,7 +195,7 @@ body button:hover {
 }
 body div[class=container-main] {
   display: grid;
-  grid-template-areas: "banner banner banner" "about about about" "swatches swatches cart" "popular popular popular" "contact contact contact" "contact contact contact";
+  grid-template-areas: "banner banner banner" "about about about" "swatches swatches cart" "popular popular popular" "contact contact contact";
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: 10vh auto 10vh;
@@ -318,8 +319,10 @@ body .navbar ul, body .page-footer ul {
   min-width: 10%;
   list-style-type: none;
 }
-body .page-footer {
-  justify-content: space-evenly;
+body .page-footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .page-footer > :nth-child(1) {
   color: #ddf0fe;
@@ -351,6 +354,10 @@ body section {
 body section:nth-child(n+2) h1 {
   border-bottom: 4px solid #d6daf0;
   margin-bottom: 0.5em;
+}
+body section#cart ul {
+  overflow-y: scroll;
+  height: 100vh;
 }
 body section#popular {
   display: flex;

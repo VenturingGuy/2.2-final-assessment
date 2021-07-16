@@ -121,6 +121,7 @@ body {
 
     a {
         color: #1D507C;
+        cursor: pointer;
     }
     
     abbr {
@@ -154,7 +155,6 @@ body {
                               "about about about"
                               "swatches swatches cart"
                               "popular popular popular"
-                              "contact contact contact"
                               "contact contact contact";
         grid-template-columns: repeat(3, 1fr);
         width: 80%;
@@ -307,7 +307,11 @@ body {
     }
 
     .page-footer {
-        justify-content: space-evenly;
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     
@@ -341,6 +345,13 @@ body {
         &:nth-child(n+2) h1 {
             border-bottom: 4px solid $color-background;
             margin-bottom: 0.5em;
+        }
+
+        &#cart {
+            ul {
+                overflow-y: scroll;
+                height: 100vh;
+            }
         }
 
         &#popular {
